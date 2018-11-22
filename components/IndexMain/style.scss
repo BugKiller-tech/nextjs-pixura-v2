@@ -30,7 +30,7 @@
     bottom: 0px;
     left: 0;
     width: 90%;
-    height: 262px;
+    height: 50%;
     background: rgba(240, 245, 255, 100);
     z-index: 1;
   }
@@ -113,19 +113,39 @@
 
 
   .dev-list {
-    margin: 50px;
+    margin: 0 13%;
     z-index: 999;
   }
   .dev-item {
-    padding: 30px;
+    padding: 10px 30px 10px 10px;
+    background: white;
     box-shadow: 0 12px 24px 0 rgba(0,0,0,0.08);
     margin: 20px 10px;
+    display: flex;
+    align-items: center;
+    img {
+      max-width: 90px;
+    }
+    .label {
+      flex-grow: 1;
+      margin-left: 10px;
+      font-size: 24px;
+      color: #424242;
+      letter-spacing: 0.6px;
+    }
   }
 
 
-
-
-
+  .part3 {
+    padding-bottom: 100px;
+  }
+  .flex {
+    display: flex;
+    align-items: center;
+    * {
+      flex-grow: 1;
+    }
+  }
 
 
 
@@ -138,6 +158,15 @@
 
     .game-controller {
       width: 100%;
+    }
+
+    .dev-list {
+      margin: 0 5%;
+    }
+    .dev-item {
+      .label {
+        font-size: 18px;
+      }
     }
 
 

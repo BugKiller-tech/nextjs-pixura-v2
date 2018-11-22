@@ -21,7 +21,7 @@ export default class IndexMain extends Component {
           </div>
         </div>
 
-        <div className="horizontal2 part2">
+        <div className="horizontal2 part2" id="creatives">
           <div className="left">
             <div>
               <div className="for-brand-label">For Creatives</div>
@@ -38,23 +38,24 @@ export default class IndexMain extends Component {
         </div>
 
         <div className="horizontal2 part3">
-          <div className="left">
-            
-
+          <div className="left flex">
             <div className="dev-list">
               <div className="dev-item">
-                adsfafasdfs
+                <img src={require('../../assets/imgs/tokenize.svg')} />
+                <span className="label">Tokenization libraries</span>
               </div>
               <div className="dev-item">
-                adsfafasdfs
+                <img src={require('../../assets/imgs/graphql.svg')} />
+                <span className="label">GraphQL queries for smart contract events</span>
               </div>
               <div className="dev-item">
-                adsfafasdfs
+                <img src={require('../../assets/imgs/off-chain.svg')} />
+                <span className="label">Off chain orders and liquidity pooling with 0x</span>
               </div>
             </div>
             <div className="light-purple-bg"></div>
           </div>
-          <div className="right">
+          <div className="right" id="developers">
             <div className="for-brand-label">For Developers</div>
             <span className="gray-bar"></span>
             <div className="desc">
